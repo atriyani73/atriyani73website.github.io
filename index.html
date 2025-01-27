@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--- box icons link --->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--- remix icons link --->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+     <!--- google fonts link --->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?
+    family=Caveat:wght@400..700&
+    family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--header section--->
+    <header>
+        <a href="#" class="logo">Portofolio</a>
+
+        <ul class="navlist">
+            <li><a href="#tentang">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Contac">Contacts</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="#" class="nav btn">Hire Me!</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    
+    <section class="Hero">
+        <div class="Hero-text"> 
+            <h6>Hello, <span>my name is</span></h6>
+            <h5><span>Atriyani</span> Akib</h5>
+             <h4>I am <span>Admin Project</span></h4>
+            <p>From Indonesia, North Kolaka. I have experience in the fields of project administration, 
+                telecommunications science and currently, I am also studying the field informatics engineering.
+                I want to talk to you about our unique.</p>
+
+        <div class="hero-icons">
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+        </div>
+
+        <div class="hero-btn">
+            <a href="image/file cv atriyani.pdf" class="btn" download>Download CV</a>
+            <a href="image/video portfolio.mp4" class="btn2">My Skills</a>
+        </div>
+     </div>
+    
+     <div id="pic">
+        <img src="image/IMG_20250126_112354.png" alt="">
+     </div>
+    </section>
+
+    <div class="scroll">
+        <a href="javascript:void(0);" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});"><i class="ri-scroll-to-bottom-fill"></i>Scroll Bottom</a>
+    </div>
+
+    
+<section id="tentang">
+    <div id="pic">
+        <img src="image/laptop.png" alt="">
+        <div id="intro">
+            <h2>Welcome to my Portfolio</h2>
+
+     <p>Sebagai seorang profesional yang memiliki pengalaman selama dua tahun dalam mengelola proyek di bidang Internal Control System dan Administrasi Proyek, 
+        saya telah terbiasa berinteraksi dengan berbagai stakeholder dan menghadapi tantangan yang kompleks. 
+        Pengalaman ini telah membekali saya dengan kemampuan yang kuat dalam perencanaan, pengorganisasian, dan koordinasi tim untuk mencapai tujuan proyek secara efektif.
+
+        Saat ini, saya sedang aktif dalam memperdalam pengetahuan di bidang Teknik Informatika di Universitas Islam Makassar. 
+        Studi ini memungkinkan saya untuk mengasah kemampuan analisis data, pemecahan masalah, dan pengembangan sistem yang efisien.
+        Kombinasi antara pengalaman praktis di dunia kerja dengan pemahaman mendalam tentang konsep-konsep teknik informatika menjadikan saya seorang individu yang adaptif 
+        dan mampu memberikan solusi inovatif bagi berbagai permasalahan bisnis.
+        
+        Saya yakin bahwa kombinasi antara keterampilan teknis yang saya miliki,
+        seperti kemampuan dalam penyambungan fiber optik dan penguasaan perangkat lunak Microsoft Office,
+        dengan soft skills seperti komunikasi yang efektif, kemampuan beradaptasi, 
+        dan etos kerja yang tinggi akan menjadi aset berharga bagi perusahaan. 
+        Saya sangat antusias untuk menerapkan pengetahuan dan pengalaman saya dalam lingkungan kerja yang dinamis dan terus berkembang.
+      <br> 
+
+                <br>  </p>
+        </div>
+        <div class="pic">
+            <img src="image/laptop.png" alt="">
+        </div>
+    </div>
+</section>
+
+
+<section id="skills">
+    <h1 class="heading">My Skills</h1>
+    <table style="margin: auto;">
+        <tr>
+            <td><img src="image/Sertifikat Pelatihan_1.jpg" alt="Gambar 1" style="display: block; margin: auto;"></td> 
+            <td><img src="image/Sertifikat Pelatihan_2.jpg" alt="Gambar 2" style="display: block; margin: auto;"></td>      
+            <td><img src="image/Sertifikat Pelatihan_3.jpg" alt="Gambar 3" style="display: block; margin: auto;"></td>
+        </tr>
+    </table>       
+
+    <body
+    div class="vidio1">
+    <video controls src="image/video portfolio.mp4">
+    </video>
+    </div>
+
+    <style>
+        video{
+            float:center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 900px;
+            margin-right: 230px;
+            margin-left: 230px;
+        }
+    </style>
+</section>
+
+<section id="Contac">
+    <h1 class="heading">Contac Me!!!</h1>
+    <form action="" class="form" onsubmit="return handleSubmit();">
+        <input type="text" name="name" class="input" placeholder="enter your name" required>
+        <input type="email" name="email" class="input" placeholder="enter your email" required>
+        <textarea name="msg" id="" cols="msg" rows="10" placeholder="enter your message" required></textarea>
+        <input type="submit" value="SEND" id="send">
+    </form>
+</section>
+
+<script>
+function handleSubmit() {
+    alert("Your message has been sent!");
+    return false; // Prevent actual form submission for demonstration
+}
+</script>
+</body>
+</html>
